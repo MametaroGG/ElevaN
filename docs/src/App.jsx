@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import {
-  Layers, Zap, Box, Download, Video, Image as ImageIcon, ChevronRight, Menu, X, ShoppingCart,
+  Layers, Zap, Box, Download, Video, Image as ImageIcon, ChevronRight, Menu, X, Github, ShoppingCart,
   ExternalLink, ShieldCheck, Settings, PlusSquare, Repeat, Info, BookOpen, MousePointer2, Save,
   Grid3X3, RotateCw, Eye, Type, Palette, RefreshCw, Maximize, Minimize, Play, Pause, Folder, Monitor, Sun, Moon
 } from 'lucide-react';
@@ -21,12 +21,6 @@ import imgGradLinear from '../assets/Normal/GradientLinear.png';
 import imgGradRadial from '../assets/Normal/GradientRadial.png';
 import imgFiber from '../assets/Normal/Fiber.png';
 import imgLeather from '../assets/Normal/Leather.png';
-
-// Import Guide Screenshots
-import imgGuide01 from '../assets/guide-01.png';
-import imgGuide02 from '../assets/guide-02.png';
-import imgGuide03 from '../assets/guide-03.png';
-import imgGuide04 from '../assets/guide-04.png';
 
 // --- Visual Diagram Components ---
 
@@ -430,7 +424,7 @@ const App = () => {
                 <p className="text-muted">BOOTHからダウンロードした <code>ElevaN.unitypackage</code> をプロジェクトへ導入します。依存パッケージは不要で、単体で動作します。</p>
               </div>
               <div className="how-to-media">
-                <img src={imgGuide01} alt="unitypackageのインポート" className="premium-img shadow-md" />
+                <img src="/assets/導入01.png" alt="unitypackageのインポート" className="premium-img shadow-md" />
               </div>
             </div>
 
@@ -443,7 +437,7 @@ const App = () => {
                 <p className="text-muted">上部メニューの <code>Tools &gt; Mame2an &gt; ElevaN</code> を選択すると、専用のエディタウィンドウが開きます。タブとしてUnity上の好きな場所にドッキング可能です。</p>
               </div>
               <div className="how-to-media">
-                <img src={imgGuide02} alt="メニューの場所" className="premium-img shadow-md" />
+                <img src="/assets/導入02.png" alt="メニューの場所" className="premium-img shadow-md" />
               </div>
             </div>
 
@@ -456,7 +450,7 @@ const App = () => {
                 <p className="text-muted">起動時には <code>BaseLayer</code> が既に設定されています。「Add Layer」から新規レイヤーを作成し、14種類のエンジンを組み合わせて複雑な質感を構築していきます。</p>
               </div>
               <div className="how-to-media">
-                <img src={imgGuide03} alt="レイヤー構築" className="premium-img shadow-md" />
+                <img src="/assets/導入03.png" alt="レイヤー構築" className="premium-img shadow-md" />
               </div>
             </div>
 
@@ -466,10 +460,10 @@ const App = () => {
                   <span className="step-num">04</span>
                   <h3>書き出し</h3>
                 </div>
-                <p className="text-muted">プレビューで満足いく結果が得られたら、解像度(最大4K)、保存先、および出力形式(PNG/TGA/EXR等)を指定して「Export」を実行. 瞬時に生成されます。</p>
+                <p className="text-muted">プレビューで満足いく結果が得られたら、解像度(最大4K)、保存先、および出力形式(PNG/TGA/EXR等)を指定して「Export」を実行。瞬時に生成されます。</p>
               </div>
               <div className="how-to-media">
-                <img src={imgGuide04} alt="エクスポート設定" className="premium-img shadow-md" />
+                <img src="/assets/導入04.png" alt="エクスポート設定" className="premium-img shadow-md" />
               </div>
             </div>
           </div>
