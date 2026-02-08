@@ -5,9 +5,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   base: '/ElevaN/',
-  root: '..',
   build: {
-    outDir: 'docs/dist',
+    outDir: 'dist',
     emptyOutDir: true,
   }
 })
