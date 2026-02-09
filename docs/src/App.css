@@ -310,6 +310,45 @@ code {
     margin: 2rem 0;
 }
 
+.diagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.diagram-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.diagram-item label {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.diagram-note {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(90, 103, 216, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    text-align: center;
+    width: fit-content;
+}
+
 .wave-sum {
     display: flex;
     flex-direction: column;
