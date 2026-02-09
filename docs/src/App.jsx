@@ -328,7 +328,7 @@ const App = () => {
 
 
 
-            <a href="https://mametarovv.booth.pm/" className="btn-primary">
+            <a href="https://mametarovv.booth.pm/items/7966219" className="btn-primary">
               <ShoppingCart size={18} /> BOOTHで購入
             </a>
           </div>
@@ -369,7 +369,7 @@ const App = () => {
             Unity上でのテクスチャ制作時間を劇的に短縮し、アーティストの想像力を解き放ちます。
           </p>
           <div className="hero-btns">
-            <a href="https://mametarovv.booth.pm/" className="btn-primary btn-lg shadow-primary">
+            <a href="https://mametarovv.booth.pm/items/7966219" className="btn-primary btn-lg shadow-primary">
               <ShoppingCart /> BOOTHで購入
             </a>
             <a href="#manual" className="btn-outline btn-lg">詳細マニュアル</a>
@@ -853,7 +853,7 @@ const App = () => {
           <h2 className="text-white">あなたの制作に、ElevaNの力を。</h2>
           <p className="text-slate-400">商用利用をご検討の場合や、法人での導入に関するご相談は、<br />BOOTHのメッセージ機能よりお気軽にお問い合わせください。</p>
           <div className="cta-btns">
-            <a href="https://mametarovv.booth.pm/" className="btn-primary btn-lg shadow-primary">
+            <a href="https://mametarovv.booth.pm/items/7966219" className="btn-primary btn-lg shadow-primary">
               <ShoppingCart /> BOOTHで問い合わせ / 購入
             </a>
           </div>
@@ -873,7 +873,7 @@ const App = () => {
           <div className="footer-links">
             <div className="link-group">
               <h4>Official</h4>
-              <a href="https://mametarovv.booth.pm/"><BoothIcon size={16} /> BOOTH Store</a>
+              <a href="https://mametarovv.booth.pm/items/7966219"><BoothIcon size={16} /> BOOTH Store</a>
               <a href="https://x.com/mametaro_vv"><XIcon size={16} /> @mametaro_vv</a>
 
             </div>
