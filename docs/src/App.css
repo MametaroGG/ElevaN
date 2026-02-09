@@ -253,6 +253,12 @@
     border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+    .manual-content {
+        padding: 1.5rem 1rem;
+    }
+}
+
 code {
     background: rgba(99, 102, 241, 0.15);
     color: #a5b4fc;
@@ -312,14 +318,21 @@ code {
 
 .diagram-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 3rem;
     margin-top: 1.5rem;
 }
 
+@media (max-width: 600px) {
+    .diagram-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -921,9 +934,32 @@ code {
         font-size: 2.8rem;
     }
 
-    .step {
-        flex-direction: column;
-        text-align: center;
+    .how-to-step {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+        direction: ltr !important;
+    }
+
+    .how-to-step:nth-child(even) {
+        direction: ltr;
+    }
+
+    .how-to-step:nth-child(even) .how-to-meta,
+    .how-to-step:nth-child(even) p {
+        text-align: left;
+    }
+
+    .how-to-media {
+        order: -1;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .params-detailed-grid {
+        gap: 2.5rem;
     }
 
     .hero-btns {
@@ -939,6 +975,27 @@ code {
 
     .manual-tabs {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .diagram-grid,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .diagram-container {
+        padding: 1rem;
+    }
+
+    .manual-tab-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .p-item strong {
+        font-size: 1rem;
     }
 }
 
