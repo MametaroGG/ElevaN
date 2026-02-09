@@ -377,10 +377,16 @@ const App = () => {
         </div>
         <div className="container hero-visual">
           <div className="video-container premium-border shadow-xl">
-            <div className="media-placeholder large">
-              <Video size={48} className="ic-primary opacity-20 mb-4" />
-              <p>メインツールの操作紹介 / デモ動画（YouTube埋め込み予定）</p>
-            </div>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/BWjYODe2t98"
+              title="ElevaN Introduction"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ borderRadius: '12px' }}
+            ></iframe>
           </div>
         </div>
       </header>
@@ -470,6 +476,28 @@ const App = () => {
               </div>
               <div className="how-to-media">
                 <img src={imgGuide04} alt="エクスポート設定" className="premium-img shadow-md" />
+              </div>
+            </div>
+
+            <div className="how-to-step">
+              <div className="how-to-content" style={{ gridColumn: '1 / -1' }}>
+                <div className="how-to-meta">
+                  <span className="step-num">VIDEO</span>
+                  <h3>操作解説動画</h3>
+                </div>
+                <p className="text-muted" style={{ marginBottom: '2rem' }}>実際の操作画面を見ながら、ElevaNの基本的な使い方をマスターしましょう。</p>
+                <div className="video-container premium-border shadow-md">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/sGRho9QAY1c"
+                    title="ElevaN Instruction"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ borderRadius: '12px' }}
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
