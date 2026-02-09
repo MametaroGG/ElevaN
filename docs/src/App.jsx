@@ -175,7 +175,7 @@ const NormalStrengthDiagram = () => (
 
 const MaskDiagram = () => (
   <div className="diagram-container">
-    <div className="diagram-grid" style={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
+    <div className="diagram-grid grid-3">
       <div className="diagram-item">
         <label>Mask Source (Layer A)</label>
         <svg width="100%" height="60" viewBox="0 0 100 60">
@@ -315,10 +315,10 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="container nav-content">
-          <div className="logo">
+          <a href="#" className="logo">
             <Layers className="logo-icon ic-primary" />
             <span>ElevaN</span>
-          </div>
+          </a>
 
           <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <a href="#features" onClick={() => setIsMenuOpen(false)}>機能</a>

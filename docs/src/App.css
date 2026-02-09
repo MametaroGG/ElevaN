@@ -76,11 +76,19 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 60%;
-    background: radial-gradient(circle, rgba(90, 103, 216, 0.1) 0%, transparent 70%);
-    /* Half previous intensity */
+    height: 80%;
+    background: radial-gradient(circle, rgba(90, 103, 216, 0.15) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-glow {
+        width: 140%;
+        height: 100%;
+        top: -5%;
+        opacity: 0.8;
+    }
 }
 
 .badge {
@@ -321,6 +329,16 @@ code {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 3rem;
     margin-top: 1.5rem;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .diagram-grid.grid-3 {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
